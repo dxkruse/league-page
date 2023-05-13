@@ -7,12 +7,9 @@ export const enableBlog = false; // requires VITE_CONTENTFUL_ACCESS_TOKEN and VI
 
 /*   STEP 2   */
 export const homepageText = `
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-  <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-  <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-  <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  <p>Welcome to "The Harper Classic" - the ultimate test of your dynasty fantasy football acumen. Named in honor of our dear friend and former league member, Grant Harper, this league carries on his legacy of passion for the game and love for the camaraderie it fosters. Grant's spirit, his unwavering enthusiasm, and his infectious love for fantasy football continue to inspire us and live on in every play, every decision, and every victory.</p>
+  <p>In The Harper Classic, you're not just managing a team for a single season, but building a franchise that will thrive over the years. It's more than just a league; it's a community of passionate, dedicated, and knowledgeable fantasy football enthusiasts, brought together by the enduring memory of a cherished friend. Here, we honor Grant's legacy as we compete, strategize, and create lasting bonds in his memory.</p>
+  <p>Will your name be etched in the annals of The Harper Classic? The game is on, and Grant's spirit cheers us on at every step.</p>
 `;
 
 /*   STEP 3   */
