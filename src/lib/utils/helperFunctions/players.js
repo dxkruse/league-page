@@ -12,7 +12,10 @@ export const loadPlayers = async (servFetch, refresh = false) => {
 
     const smartFetch = servFetch ?? fetch;
     
+    // Get data
     const now = Math.round(new Date().getTime() / 1000);
+
+    // If browser, get playersInfo and expiration from local storage
     let playersInfo = null;
     let expiration = null;
     if(browser) {
@@ -20,6 +23,7 @@ export const loadPlayers = async (servFetch, refresh = false) => {
         expiration = parseInt(localStorage.getItem("expiration"));
     }
 
+    // If playersInfo is stale, return it
     if(playersInfo && playersInfo[1426] && expiration && now > expiration && !refresh) {
         return {
             players: playersInfo,
