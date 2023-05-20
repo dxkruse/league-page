@@ -1,5 +1,5 @@
 /*   STEP 1   */
-export const leagueID = "925490163113934848"; // your league ID
+export const leagueID = "964957119210471424" // "925490163113934848"; // your league ID
 export const leagueName = "The Harper Classic"; // your league name
 export const dues = 100; // (optional) used in template constitution page
 export const dynasty = true; // true for dynasty leagues, false for redraft and keeper
