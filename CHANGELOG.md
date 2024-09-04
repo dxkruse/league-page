@@ -2,6 +2,108 @@
 
 All notable changes to this project will be documented in this file.
 
+## [2.3.5] - 2024-04-27
+
+### Fixed
+
+- Resorces page wouldn't load. [(issue #296)](https://github.com/nmelhado/league-page/issues/296)
+- Sleeper now include median match in standings API, so we ended up double counting. Removed the median match logic [(issue #272)](https://github.com/nmelhado/league-page/issues/296) and [(issue #276)](https://github.com/nmelhado/league-page/issues/276)
+- In playoff matches, the bye weeks had a non-valid manager ID whick broke due to poor error handling [(issue #289)](https://github.com/nmelhado/league-page/issues/289)
+- Vercel was weirdly tring to force node 20 despite the fact that Vercel doesn't support node 20 [(issue #294)](https://github.com/nmelhado/league-page/issues/294)
+- gotoManagers wasn't working on the Records page because of a bad year value being passed in. Made gotoManagers more error tollerant and also fixed the bug
+
+## [2.3.4] - 2023-09-13
+
+### Fixed
+
+- Users were unable to add comments. [(issue #268)](https://github.com/nmelhado/league-page/issues/268)
+
+## [2.3.3] - 2023-09-08
+
+### Fixed
+
+- Use most recent user avatar for author and comment image
+
+### Added
+
+- Add positional key to rosters. [(enhancement #261)](https://github.com/nmelhado/league-page/issues/261)
+    - Aso added team logo and removed the large team text to better use the space
+
+## [2.3.2] - 2023-09-07
+
+### Fixed
+
+- Correctly display author and commenter names and images
+
+## [2.3.1] - 2023-09-06
+
+### Fixed
+
+- Darkmode fix for blog post preview
+
+## [2.3.0] - 2023-09-06
+
+### Fixed
+
+- Auction leagues weren't correctly displaying the bid amount. [(issue #254)](https://github.com/nmelhado/league-page/issues/254)
+
+### Changed
+
+- Blogs are now displayed as previews. This umproves the UI by avoiding massive walls of text. I've also added dedicated full blog post pages to display the full post and comments. This gives individual blog posts their own links for improved shareability.
+
+## [2.2.8] - 2023-08-21
+
+### Fixed
+
+- If a league did multiple drafts in the same season (startup and rookie for example), only the most recent was displayed. This ensures that all drafts from a particular season are displayed. [(issue #240)](https://github.com/nmelhado/league-page/issues/240)
+
+## [2.2.7] - 2023-08-21
+
+### Fixed
+
+- Some matchups only had one team in the matchup (playing themselves ????), which caused bugs in any page that touched league records [(issue #244)](https://github.com/nmelhado/league-page/issues/244)
+
+## [2.2.6] - 2023-07-25
+
+### Fixed
+
+- Small bug that was causing the performance comparisson to not always show up in the rivalry page
+
+## [2.2.5] - 2023-06-30
+
+### Fixed
+
+- Fix resources bug. NBC Sports Edge API no longer works and was breaking the resources page [(issue #230)](https://github.com/nmelhado/league-page/issues/230)
+    - Removed it for now. Will try to add it back if I can find the new API
+
+## [2.2.4] - 2023-06-25
+
+### Fixed
+
+- Fix weird bug where stats comparisson dissapeared from rivalry page
+
+## [2.2.3] - 2023-06-25
+
+### Added
+
+- Added fpts/game and win % to the rivalry page as well as emphasizing which manager is leading in each category
+
+## [2.2.2] - 2023-06-25
+
+### Fixed
+
+- Fix edge case from transactions in the calendar year before the first fantasy season [(issue #206)](https://github.com/nmelhado/league-page/issues/206)
+
+- Fix navigation when clicking on rival [(issue #212)](https://github.com/nmelhado/league-page/issues/212)
+
+- Fix page freeze on records > playoffs > season records [(issue #213)](https://github.com/nmelhado/league-page/issues/213)
+
+- Fix standings page during preseason [(issue #221)](https://github.com/nmelhado/league-page/issues/221)
+
+### Changed
+
+- Use name from managers array (if available) instead of username [(issue #227)](https://github.com/nmelhado/league-page/issues/227)
+
 ## [2.2.1] - 2023-04-30
 
 ### Fixed
